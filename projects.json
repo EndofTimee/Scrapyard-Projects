@@ -1,17 +1,52 @@
 [
     {
-      "title": "Project 1",
-      "description": "Description for Project 1",
-      "github_link": "https://github.com/user/project1"
+      "title": "Flappy Tennis ",
+      "description": "Flick a tennis ball into the air, Up goes orpheus, be too slow then byebye Orpheus",
+      "github_link": "https://github.com/RileyBautista/FlappyTennis"
     },
     {
-      "title": "Project 2",
-      "description": "Description for Project 2",
-      "github_link": "https://github.com/user/project2"
+      "title": "Captcha Thing",
+      "description": "a login page with a captcha where every element and aspect is as annoying as hell. Ex: when you click to username, it turns into the password field and when you click out it turn back into username field keeping content.",
+      "github_link": "https://github.com/EndofTimee/Scrapyard"
     },
     {
-      "title": "Project 3",
-      "description": "Description for Project 3",
-      "github_link": "https://github.com/user/project3"
-    }
+      "title": "Gamblecore",
+      "description": "Rizz First / Then Griddy",
+      "github_link": "https://github.com/theavgeekbee/gamblecore"
+    },
+    {
+      "title": "Chuck That Thang Like A 15th Century Siege Weapon",
+      "description": "Violence is an indelible element of the human spirit. No matter how much we try to socialize and condition ourselves to an imposed pacifism, the law of the jungle will always be inscribed on our bones. The proof is in the surges and swings of everyday irritants, in that clenched jaw you use to deal with your coworker bothering you for the last goddamn time.",
+      "github_link": "https://github.com/gusruben/scrapyard-launch-frontend"
+    },
+    {
+      "title": "Scrapyard Flashlight",
+      "description": "An overengineered flashlight app created at Hack Club's Scrapyard event (March 2025). Because why should a flashlight just... turn on and off?",
+      "github_link": "https://github.com/443pablo/scrapyard"
+    },
+    {
+      "title": "Fuck You Website",
+      "description": "Browsing the web has become way too easy! So we set out to fix this and make it much more complicated.?",
+      "github_link": "https://github.com/3kh0/fuckyouwebsite"
+    },
+    {
+      "title": "Scrapyard Flashlight",
+      "description": "An overengineered flashlight app created at Hack Club's Scrapyard event (March 2025). Because why should a flashlight just... turn on and off?",
+      "github_link": "https://github.com/443pablo/scrapyard"
+    },
+    {
+      "title": "Yeller",
+      "description": "yells?",
+      "github_link": "https://github.com/Ianyourgod/yeller-scrapyard"
+    },
+    {
+      "title": "CookieCrumbl",
+      "description": "The website that contains the cure to cancer, but cannot escape the COOKIES.",
+      "github_link": "https://github.com/alterj07/CookieCrumbl"
+    },
+    {
+      "title": "Distractatime",
+      "description": "Distractions",
+      "github_link": "https://github.com/evan-gan/scrapyard-austin"
+    },
   ]
