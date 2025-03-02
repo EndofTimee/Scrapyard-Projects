@@ -68,5 +68,10 @@
         "title": "dex",
         "description": "Neverending login system",
         "github_link": "https://github.com/dexclarkegg/dex"
+    },
+    {
+        "title": "The Impersonator",
+        "description": "Compete with your friends to come up with the best voice impressions!",
+        "github_link": "https://github.com/JesseDoesStuff/Impersonator-Game"
     }
   ]
