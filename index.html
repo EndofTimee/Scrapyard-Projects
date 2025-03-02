@@ -23,6 +23,14 @@
             background: rgb(157,120,79);
             border-width: 0px;
         }
+        .card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .card-body {
+            flex: 1;
+        }
     </style>
 </head>
 
@@ -49,7 +57,7 @@
                     const container = document.getElementById('cards-container');
                     data.forEach(project => {
                         const col = document.createElement('div');
-                        col.className = 'col-lg-4';
+                        col.className = 'col-lg-4 d-flex';
 
                         const card = document.createElement('div');
                         card.className = 'card';
@@ -67,7 +75,7 @@
                         description.textContent = project.description;
 
                         const button = document.createElement('a');
-                        button.className = 'btn btn-primary';
+                        button.className = 'btn btn-primary mt-auto';
                         button.href = project.github_link;
                         button.textContent = 'View on GitHub';
 
