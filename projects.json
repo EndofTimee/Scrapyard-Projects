@@ -68,5 +68,10 @@
       "title": "Trust Me Bro",
       "description": "The crypto currency that relies on humanity and ethics. Just trust me bro!.",
       "github_link": "https://github.com/TheScientist101/trust-me-bro"
+    },
+    {
+        "title": "dex"
+        "description": "Neverending login system",
+        "github_link": "https://github.com/dexclarkegg/dex",
     }
   ]
