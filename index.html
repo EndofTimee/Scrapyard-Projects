@@ -4,13 +4,29 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Untitled</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Phantom%20Sans%200.7.css">
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css">
+    <style>
+        body {
+            background: rgb(175,141,103);
+            font-family: 'Phantom Sans 0.7', sans-serif;
+        }
+        .card-body {
+            font-family: 'Phantom Sans 0.7', sans-serif;
+            background: rgba(175,141,103,0.65);
+            border-width: 3px;
+            border-color: rgb(159,123,82);
+        }
+        .btn-primary {
+            background: rgb(157,120,79);
+            border-width: 0px;
+        }
+    </style>
 </head>
 
-<body style="background: rgb(175,141,103);">
+<body>
     <nav class="navbar navbar-expand-md bg-body py-3">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><img src="assets/img/wordmark%20(3).svg" style="height: 50px;"><span style="font-family: 'Phantom Sans 0.7';font-weight: bold;color: rgb(36,46,63);">Projects</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-2">
@@ -21,17 +37,51 @@
         </div>
     </nav>
     <div class="container py-4 py-xl-5">
-        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
-            <div class="col-lg-4">
-                <div class="card">
-                    <div class="card-body p-4" style="font-family: 'Phantom Sans 0.7';background: rgba(175,141,103,0.65);border-width: 3px;border-color: rgb(159,123,82);">
-                        <h4 class="card-title" style="font-weight: bold;">TITLE</h4>
-                        <p class="card-text">DESCRIPTION</p><button class="btn btn-primary" type="button" style="background: rgb(157,120,79);border-width: 0px;">Button</button>
-                    </div>
-                </div>
-            </div>
+        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3" id="cards-container">
+            <!-- Cards will be dynamically inserted here -->
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('projects.json')
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById('cards-container');
+                    data.forEach(project => {
+                        const col = document.createElement('div');
+                        col.className = 'col-lg-4';
+
+                        const card = document.createElement('div');
+                        card.className = 'card';
+
+                        const cardBody = document.createElement('div');
+                        cardBody.className = 'card-body p-4';
+
+                        const title = document.createElement('h4');
+                        title.className = 'card-title';
+                        title.style.fontWeight = 'bold';
+                        title.textContent = project.title;
+
+                        const description = document.createElement('p');
+                        description.className = 'card-text';
+                        description.textContent = project.description;
+
+                        const button = document.createElement('a');
+                        button.className = 'btn btn-primary';
+                        button.href = project.github_link;
+                        button.textContent = 'View on GitHub';
+
+                        cardBody.appendChild(title);
+                        cardBody.appendChild(description);
+                        cardBody.appendChild(button);
+                        card.appendChild(cardBody);
+                        col.appendChild(card);
+                        container.appendChild(col);
+                    });
+                })
+                .catch(error => console.error('Error fetching projects:', error));
+        });
+    </script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
