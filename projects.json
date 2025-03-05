@@ -83,5 +83,10 @@
         "title": "Not Worth It",
         "description": "The fastest way to get motivated and unmotivated at the same time",
         "github_link": "https://github.com/ronsedo275/NotWorthIt"
+    },
+    {
+        "title": "ROSS (Responsive Opposing rockpaperScissors Servant) Bot",
+        "description": "A rock, paper, scissors bot featuring Coke and Celsius.",
+        "github_link": "https://github.com/bojanradjenovic/ross-bot"
     }
   ]
